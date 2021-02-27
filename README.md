@@ -22,9 +22,11 @@ process noise, measurement noise 는 gaussian noise.
 Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse noise 를 입력하면 발산하는 모습을 보임.
 
 --process noise와 measurement noise를 입력했을 때의 결과
-![pic1](https://user-images.githubusercontent.com/54099930/109395078-cfd26380-796d-11eb-94c6-7b10c054ca25.jpg)
-![pic2](https://user-images.githubusercontent.com/54099930/109395081-d234bd80-796d-11eb-9c21-16a73ba7fdeb.jpg)
-![pic3](https://user-images.githubusercontent.com/54099930/109395085-d3fe8100-796d-11eb-93ee-f6ed56d06ca6.jpg)
+
+![pic1](https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg) ![pic2](https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg)
+![pic3](https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg)
+
 --추가로 impulse noise를 입력했을 때의 결과
-![pic4](https://user-images.githubusercontent.com/54099930/109395087-d5c84480-796d-11eb-89f4-5eac621bc119.jpg)
+
+![pic4](https://user-images.githubusercontent.com/54099930/109395223-89313900-796e-11eb-9b7d-ef57ab257662.jpg)
 

@@ -3,7 +3,8 @@ state estimate. observer, kalman filter, etc
 
 ## DC-Motor Full State Observer
 
-DC Motor + Controller + Full State Observer
+-DC Motor + Controller + Full State Observer
+
 Full state feedback(Pole Placement)를 적용한 system에 Full state observer를 추가
 observer의 pole은 controller의 6배 크기로 설정하였음
 process noise, measurement noise 는 gaussian noise

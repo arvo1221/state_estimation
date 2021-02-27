@@ -33,23 +33,23 @@ overshoot 4.22%
 pole s = -zeta*wn +- j*wn*sqrt(1-zeta^2)
 %}
 wn = 3.6; zeta = 0.7099;
-s1 = -zeta*wn + i*wn*sqrt(1-zeta^2)
-s2 = -zeta*wn - i*wn*sqrt(1-zeta^2)
-s3 = 10*real(s1)
+s1 = -zeta*wn + i*wn*sqrt(1-zeta^2);
+s2 = -zeta*wn - i*wn*sqrt(1-zeta^2);
+s3 = 10*real(s1);
 c_s = [s1 s2 s3];
 
 %gain K using Ackerman's formula
 C = [G F*G F^2*G];
 syms f;
-a_c = sym2poly((f-c_s(1))*(f-c_s(2))*(f-c_s(3)))
-a_cF = F^3 + a_c(1)*F^2 + a_c(2)*F + a_c(3)*eye(3,3)
-K = [0 0 1]*inv(C)*a_cF
+a_c = sym2poly((f-c_s(1))*(f-c_s(2))*(f-c_s(3)));
+a_cF = F^3 + a_c(1)*F^2 + a_c(2)*F + a_c(3)*eye(3,3);
+K = [0 0 1]*inv(C)*a_cF;
 %use function acker
 K = acker(F,G,c_s)
 %eig(F-G*K)
 
 %N_bar
-N = inv([F G ; H J])*[0;0;0;1]
+N = inv([F G ; H J])*[0;0;0;1];
 Nx = [N(1);N(2);N(3)];
 Nu = [N(4)];
 N_bar = K*Nx + Nu;
@@ -57,7 +57,7 @@ N_bar = K*Nx + Nu;
 r = 1;
 syms x1 x2 x3;
 x1 = 0; x2 = 0; x3 = 0;
-x = [x1; x2; x3]
+x = [x1; x2; x3];
 %{
 %plot the resulting unit step response
 for j = 0:30000
@@ -79,15 +79,15 @@ det(O)
 %gain L using Ackerman's formula
 e_s = 6*c_s;
 C = [G F*G F^2*G];
-a_e = sym2poly((f-e_s(1))*(f-e_s(2))*(f-e_s(3)))
-a_eF = F^3 + a_e(1)*F^2 + a_e(2)*F + a_e(3)*eye(3,3)
-L = a_eF*inv(O)*[0;0;1]
+a_e = sym2poly((f-e_s(1))*(f-e_s(2))*(f-e_s(3)));
+a_eF = F^3 + a_e(1)*F^2 + a_e(2)*F + a_e(3)*eye(3,3);
+L = a_eF*inv(O)*[0;0;1];
 %use function acker 
 L = (acker(F',H',e_s))'
 
 syms x1_hat x2_hat x3_hat;
 x1_hat = 0; x2_hat = 0; x3_hat = 0;
-x_hat = [x1_hat; x2_hat; x3_hat]
+x_hat = [x1_hat; x2_hat; x3_hat];
 
 %{
 %plot the resulting unit step response contain observer
@@ -140,14 +140,22 @@ plot(t,Y);
 grid on;
 hold on;
 plot(t,Y_hat);
+xlabel('time[s]')
+ylabel('radian');
 legend('origin','observer')
 subplot(3,1,2);
 plot(t,Y2);
 grid on;
 hold on;
 plot(t,Y2_hat);
+xlabel('time[s]')
+ylabel('angular velocity[rad/s]');
+legend('origin','observer')
 subplot(3,1,3);
 plot(t,Y3);
 grid on;
 hold on;
 plot(t,Y3_hat);
+xlabel('time[s]');
+ylabel('current[A]');
+legend('origin','observer')

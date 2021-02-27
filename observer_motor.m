@@ -132,10 +132,8 @@ for j = 0:30000
     Y3(:,j+1) = [0 0 1]*x;
     Y2_hat(:,j+1) = [0 1 0]*x_hat;
     Y3_hat(:,j+1) = [0 0 1]*x_hat;
-    U(:,j+1) = u;
 end
 t= 0:dt:3;
-%plot(t,U)
 
 subplot(3,1,1);
 plot(t,Y);

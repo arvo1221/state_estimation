@@ -11,6 +11,19 @@ process noise, measurement noise 는 gaussian noise
 observer는 noise에 취약한 경향을 보여줌. pole을 수정하면 noise의 영향을 덜 받겠으나, 움직임이 느려질 것
 일정 주기마다 이동 거리(x1) 데이터를 감소시키면 관측기의 거동이 커지며, 실제 움직임에서 크게 벗어나는 모습을 볼 수 있음
 
+--noise를 입력하지 않음
+
+![noise x](https://user-images.githubusercontent.com/54099930/109395400-83882300-796f-11eb-9dfc-b7db6f7c4176.jpg)
+
+--process noise + measurement noise
+
+![gaussian noise](https://user-images.githubusercontent.com/54099930/109395408-8daa2180-796f-11eb-861d-259394b70f78.jpg)
+
+--추가로 impulse noise 입력
+
+![impulse](https://user-images.githubusercontent.com/54099930/109395421-9bf83d80-796f-11eb-8a95-fa90c858d9e8.jpg)
+
+
 ##DC-Motor Kalman Filter
 
 -DC Motor + Controller + Kalman Filter

@@ -13,15 +13,15 @@ observer는 noise에 취약한 경향을 보여줌. pole을 수정하면 noise�
 
 --noise를 입력하지 않음
 
-![noise x](https://user-images.githubusercontent.com/54099930/109395400-83882300-796f-11eb-9dfc-b7db6f7c4176.jpg)
+![noise x](https://user-images.githubusercontent.com/54099930/109395502-1d4fd000-7970-11eb-9760-8408f8072539.jpg)
 
 --process noise + measurement noise
 
-![gaussian noise](https://user-images.githubusercontent.com/54099930/109395408-8daa2180-796f-11eb-861d-259394b70f78.jpg)
+![gaussian noise](https://user-images.githubusercontent.com/54099930/109395507-20e35700-7970-11eb-9e79-91d511b4b7fa.jpg)
 
 --추가로 impulse noise 입력
 
-![impulse](https://user-images.githubusercontent.com/54099930/109395421-9bf83d80-796f-11eb-8a95-fa90c858d9e8.jpg)
+![impulse](https://user-images.githubusercontent.com/54099930/109395510-2476de00-7970-11eb-98bb-7851dff371d3.jpg)
 
 
 ##DC-Motor Kalman Filter

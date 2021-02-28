@@ -24,7 +24,7 @@ observer는 noise에 취약한 경향을 보여줌. pole을 수정하면 noise�
 ![impulse](https://user-images.githubusercontent.com/54099930/109395510-2476de00-7970-11eb-98bb-7851dff371d3.jpg)
 
 
-##DC-Motor Kalman Filter
+## DC-Motor Kalman Filter
 
 -DC Motor + Controller + Kalman Filter
 

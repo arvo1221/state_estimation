@@ -35,13 +35,12 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 
 --process noise와 measurement noise를 입력했을 때의 결과
 
-<img src="https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg" width="550">
-<img src="https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg" width="450" style="margin-left: auto; margin-right: auto; display: block;"/>
-<img src="https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg" width="450" style="margin-left: auto; margin-right: auto; display: block;"/">
+<img src="https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg" width="500">
+<img src="https://user-images.githubusercontent.com/54099930/109479707-028b7180-7abe-11eb-8c5f-5c9020b598cc.jpg" width="500">
 
 --추가로 impulse noise를 입력했을 때의 결과
 
-<img src="https://user-images.githubusercontent.com/54099930/109395223-89313900-796e-11eb-9b7d-ef57ab257662.jpg" width="550">
+<img src="https://user-images.githubusercontent.com/54099930/109395223-89313900-796e-11eb-9b7d-ef57ab257662.jpg" width="500">
 
 ## Kalman Filter with Constant Velocity Model
 
@@ -55,11 +54,11 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 드론의 velocity는 desired velocity를 바로 만족하지 못한다.
 여기서는 tau*v_dot + v = v_des 로 설정하였다.
 
-<img src="https://user-images.githubusercontent.com/54099930/109472729-d8ce4c80-7ab5-11eb-9e54-6ce9ac46f4e7.png" alt="원본 신호와 Filter의 출력 신호를 비교." width="680">
+<img src="https://user-images.githubusercontent.com/54099930/109472729-d8ce4c80-7ab5-11eb-9e54-6ce9ac46f4e7.png" alt="원본 신호와 Filter의 출력 신호를 비교." width="550">
 
 ***원본 신호와 Filter의 출력 신호를 비교.***
 
-<img src="https://user-images.githubusercontent.com/54099930/109472749-dc61d380-7ab5-11eb-97cf-6ab78f79c5e6.png" alt="noise가 입력된 신호와 Filter의 출력 신호를 비교." width="680">
+<img src="https://user-images.githubusercontent.com/54099930/109472749-dc61d380-7ab5-11eb-97cf-6ab78f79c5e6.png" alt="noise가 입력된 신호와 Filter의 출력 신호를 비교." width="550">
 
 ***noise가 입력된 신호와 Filter의 출력 신호를 비교.***
 
@@ -67,6 +66,6 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 
 차원이 증가함에 따라 matrix의 크기 역시 증가해야 한다. 이 때 matrix를 새로 정의할 필요 없이 Jordan form 처럼 y축에 대한 성분을 추가해주면 된다. 1-dim에 추가한 y 성분은 v = v_des로 설정하였다.
 
-<img src="https://user-images.githubusercontent.com/54099930/109473456-a5d88880-7ab6-11eb-8173-fd99d39aaf6e.png" width="680">
+<img src="https://user-images.githubusercontent.com/54099930/109473456-a5d88880-7ab6-11eb-8173-fd99d39aaf6e.png" width="550">
 
 

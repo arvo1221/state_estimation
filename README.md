@@ -36,7 +36,8 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 --process noise와 measurement noise를 입력했을 때의 결과
 
 <img src="https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg" width="550">
-<img src="https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg" width="450"> <img src="https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg" width="450">
+<img src="https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg" width="450" float:left>
+<img src="https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg" width="450" float:left>
 
 --추가로 impulse noise를 입력했을 때의 결과
 
@@ -55,9 +56,11 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 여기서는 tau*v_dot + v = v_des 로 설정하였다.
 
 <img src="https://user-images.githubusercontent.com/54099930/109472729-d8ce4c80-7ab5-11eb-9e54-6ce9ac46f4e7.png" alt="원본 신호와 Filter의 출력 신호를 비교." width="680">
+
 ***원본 신호와 Filter의 출력 신호를 비교.***
 
 <img src="https://user-images.githubusercontent.com/54099930/109472749-dc61d380-7ab5-11eb-97cf-6ab78f79c5e6.png" alt="noise가 입력된 신호와 Filter의 출력 신호를 비교." width="680">
+
 ***noise가 입력된 신호와 Filter의 출력 신호를 비교.***
 
 ### 2 Dimension Constant Velocity Model

@@ -13,15 +13,15 @@ observer는 noise에 취약한 경향을 보여줌. pole을 수정하면 noise�
 
 --noise를 입력하지 않음
 
-<img src="https://user-images.githubusercontent.com/54099930/109395502-1d4fd000-7970-11eb-9760-8408f8072539.jpg" width="680">
+<img src="https://user-images.githubusercontent.com/54099930/109395502-1d4fd000-7970-11eb-9760-8408f8072539.jpg" width="650">
 
 --process noise + measurement noise
 
-<img src="https://user-images.githubusercontent.com/54099930/109395507-20e35700-7970-11eb-9e79-91d511b4b7fa.jpg" width="680">
+<img src="https://user-images.githubusercontent.com/54099930/109395507-20e35700-7970-11eb-9e79-91d511b4b7fa.jpg" width="650">
 
 --추가로 impulse noise 입력
 
-<img src="https://user-images.githubusercontent.com/54099930/109395510-2476de00-7970-11eb-98bb-7851dff371d3.jpg" width="680">
+<img src="https://user-images.githubusercontent.com/54099930/109395510-2476de00-7970-11eb-98bb-7851dff371d3.jpg" width="650">
 
 ## DC-Motor Kalman Filter
 
@@ -35,13 +35,12 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 
 --process noise와 measurement noise를 입력했을 때의 결과
 
-<img src="https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg" width="450">
-<img src="https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg" width="450">
-<img src="https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg" width="450">
+<img src="https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg" width="550">
+<img src="https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg" width="450"> <img src="https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg" width="450">
 
 --추가로 impulse noise를 입력했을 때의 결과
 
-<img src="https://user-images.githubusercontent.com/54099930/109395223-89313900-796e-11eb-9b7d-ef57ab257662.jpg" width="680">
+<img src="https://user-images.githubusercontent.com/54099930/109395223-89313900-796e-11eb-9b7d-ef57ab257662.jpg" width="550">
 
 ## Kalman Filter with Constant Velocity Model
 
@@ -56,8 +55,10 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 여기서는 tau*v_dot + v = v_des 로 설정하였다.
 
 <img src="https://user-images.githubusercontent.com/54099930/109472729-d8ce4c80-7ab5-11eb-9e54-6ce9ac46f4e7.png" alt="원본 신호와 Filter의 출력 신호를 비교." width="680">
+***원본 신호와 Filter의 출력 신호를 비교.***
 
 <img src="https://user-images.githubusercontent.com/54099930/109472749-dc61d380-7ab5-11eb-97cf-6ab78f79c5e6.png" alt="noise가 입력된 신호와 Filter의 출력 신호를 비교." width="680">
+***noise가 입력된 신호와 Filter의 출력 신호를 비교.***
 
 ### 2 Dimension Constant Velocity Model
 

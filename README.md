@@ -36,10 +36,26 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 
 --process noise와 measurement noise를 입력했을 때의 결과
 
-![pic1](https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg) ![pic2](https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg)
+![pic1](https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg){: width="300" height="800%"} ![pic2](https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg)
 ![pic3](https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg)
 
 --추가로 impulse noise를 입력했을 때의 결과
 
 ![pic4](https://user-images.githubusercontent.com/54099930/109395223-89313900-796e-11eb-9b7d-ef57ab257662.jpg)
+
+## Kalman Filter with Constant Velocity Model
+
+2021 캡스톤 설계에서 anti-drone을 만들고자 하는데, 비전을 통해 드론의 위치를 추적하고  한다.
+이 때 비전에서 입력받은 드론의 pose를 신뢰할 수 없다. 실시간성이 보장되지 않으며, 알 수 없는 노이즈가 추가되기 때문이다. 정확한 위치를 파악하지 못하면 드론을 타격할 수 없다.
+이러한 점을 극복하고자 한 가지 조건을 추가하고, Kalman Filter를 사용한다.
+드론의 움직임은 Constant Velocity로 제한한다. 드론이 무작위의 속도로 구동된다면 정확한 모델을 구할 수 없다. 잘못된 모델링은 필터의 잘못된 추정으로 이어질 것이다. 따라서 등속도 운동으로 제한하여 정확한 모델을 구한다.
+
+### 1 Dimension Constant Velocity Model
+
+드론의 velocity는 desired velocity를 바로 만족하지 못한다.
+여기서는 tau*v_dot + v = v_des 로 설정하였다.
+
+### 2 Dimension Constant Velocity Model
+
+차원이 증가함에 따라 matrix의 크기 역시 증가해야 한다. 이 때 matrix를 새로 정의할 필요 없이 Jordan form 처럼 y축에 대한 성분을 추가해주면 된다. 1-dim에 추가한 y 성분은 v = v_des로 설정하였다.
 

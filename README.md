@@ -13,7 +13,7 @@ observer는 noise에 취약한 경향을 보여줌. pole을 수정하면 noise�
 
 --noise를 입력하지 않음
 
-<img src="https://user-images.githubusercontent.com/54099930/109395502-1d4fd000-7970-11eb-9760-8408f8072539.jpg" width="980">
+<img src="https://user-images.githubusercontent.com/54099930/109395502-1d4fd000-7970-11eb-9760-8408f8072539.jpg" width="680">
 
 ![noise x](https://user-images.githubusercontent.com/54099930/109395502-1d4fd000-7970-11eb-9760-8408f8072539.jpg)
 

@@ -36,8 +36,8 @@ Kalman Filter는 gaussian noise에 강인한 모습을 보이나, x1에 impulse 
 --process noise와 measurement noise를 입력했을 때의 결과
 
 <img src="https://user-images.githubusercontent.com/54099930/109395209-7dde0d80-796e-11eb-9953-f566dbfcbf79.jpg" width="550">
-<img src="https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg" width="450" float:left; margin-right:20px;>
-<img src="https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg" width="450" float:left;>
+<img src="https://user-images.githubusercontent.com/54099930/109395212-7fa7d100-796e-11eb-9dde-05b79c14357d.jpg" width="450" sytle="float:left;">
+<img src="https://user-images.githubusercontent.com/54099930/109395218-859db200-796e-11eb-91a1-10dac20ecc36.jpg" width="450" sytle="float:left;">
 
 --추가로 impulse noise를 입력했을 때의 결과
 
